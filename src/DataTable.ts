@@ -26,7 +26,7 @@ export interface DataEvent {
 })
 export class DataTable implements OnChanges, DoCheck {
 
-    private diff: IterableDiffer;
+    private diff: IterableDiffer<any>;
     @Input("mfData") public inputData: any[] = [];
 
     @Input("mfSortBy") public sortBy: string|string[] = "";
